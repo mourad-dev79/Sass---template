@@ -1,0 +1,27 @@
+
+*{
+    @include prefixer(box-sizing, border-box, webkit moz o ms)
+}
+
+.container {
+    
+    margin: auto;
+    padding: 0 15px;
+    position: relative;
+    @media #{$minSmall} {
+        width: 768px;
+    }
+    @media #{$minMedium} {
+        width: 970px;
+    }
+
+    @media #{$minLarge} {
+        width: 1000px;
+    }
+} 
+
+.text-center-xs{
+    @media (max-width:767px) {
+        text-align: center;
+    }
+}

@@ -1,0 +1,43 @@
+
+
+.main-button {
+    background-color: rgba($mainColor, .8);
+    color:  #ffffff;
+    border: none;
+    min-width: 100px;
+    text-align: center;
+    padding: 13px 13px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-weight: bold;
+    @include prefixer(transition, all .5s ease , webkit moz o ms);
+
+    &:hover {
+        background-color: $mainColor;
+    }
+}
+
+.the-toggler {
+    background-color: $mainColor;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    left: 500px;
+    
+    @media #{$minSmall} {
+        display: none;
+    }
+    span {
+
+        width: 50px;
+        height: 4x;
+        display: block;
+        background-color: #ffffff;
+        margin-bottom: 5px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
